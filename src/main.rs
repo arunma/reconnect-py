@@ -1,7 +1,6 @@
 use clap::Parser;
 use reconnect::csv_api::{CsvApi, CsvParams};
 
-/// Simple program to greet a person
 #[derive(Parser, Debug)]
 #[clap(author, version, about, long_about = None)]
 struct Args {
