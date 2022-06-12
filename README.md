@@ -1,4 +1,4 @@
-# reconnect - comparison/reconciliation tool built on Rust**
+# reconnect - comparison/reconciliation tool built on Rust
 
 Reconciliation must be cheap and fast and inspired by the usage of Merkle trees by Cassandra for detecting anti-entropy, this is an attempt to use Merkle trees for performing quick and efficient comparison of two datasets.  
 
