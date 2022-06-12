@@ -7,7 +7,7 @@ This project has the following additives :
 1. Redesigned the Merkle Tree to be an array (like the heap array) instead of a first class datastucture, to optimize on locality.
 2. Enhanced the code to support CSVs. Has abstractions to extend to other formats.
 3. The current implementation stores the hashes (32 bit) in memory.  However, the underlying data could be stored in an external store (database/file). Also, swapped Adler with murmur3 for speed.
-4. 1 million * 1 million compares in ~22 seconds. The code is single threaded and runs on a single machine.  
+4. A sample test of 1 million * 1 million records (6 columns) ran in ~22 seconds. The code is currently single threaded and runs on a single machine.  
 
 ## Usage
 
@@ -15,11 +15,12 @@ This project has the following additives :
 ./reconnect -l <path to first file> -r <path to second file>
 ```
 
-
 **Example:**
 ```
 ./reconnect -l ./fixtures/test_person1.csv -r ./fixtures/test_person2.csv
 ```
+
+
 
 ## Complexity
 
