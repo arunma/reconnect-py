@@ -9,11 +9,22 @@ This project has the following additives :
 3. The current implementation stores the hashes (32 bit) in memory.  However, the underlying data could be stored in an external store (database/file). Also, swapped Adler with murmur3 for speed.
 4. 1 million * 1 million compares in ~22 seconds. The code is single threaded and runs on a single machine.  
 
+## Usage
 
-**Complexity:**
+```
+./reconnect -l <path to first file> -r <path to second file>
+```
+
+
+**Example:**
+```
+./reconnect -l ./fixtures/test_person1.csv -r ./fixtures/test_person2.csv
+```
+
+## Complexity
 
 As against traditional hash/tree based comparisons where the time complexity needs to be calculated based on input, this is an example of [output sensitive algorithm](https://en.wikipedia.org/wiki/Output-sensitive_algorithm) where the complexity is `O(d+dh)`, `d` being the number of leaf node differences and `h` being the height of the tree.
 
-**Rust experts**
+## Rust experts
 
 Would greatly appreciate your feedback on idiomatic usage, best practices and optimizations.
