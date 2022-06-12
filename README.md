@@ -12,7 +12,7 @@ This project has the following additives :
 
 **Complexity:**
 
-As against hash/tree based comparisons where the time complexity needs to be calculated based on input, this is an example of [output sensitive algorithm](https://en.wikipedia.org/wiki/Output-sensitive_algorithm) where the complexity is O(d+dh), d being the number of leaf node differences and h being the height of the tree.
+As against hash/tree based comparisons where the time complexity needs to be calculated based on input, this is an example of [output sensitive algorithm](https://en.wikipedia.org/wiki/Output-sensitive_algorithm) where the complexity is `O(d+dh)`, `d` being the number of leaf node differences and `h` being the height of the tree.
 
 **Rust experts**
 
