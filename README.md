@@ -21,13 +21,13 @@ This project has the following additives :
 ```
 
 ## Build and Run
-If you would like to run it inside `cargo`, the command is 
+If you would like to run the program inside `cargo`, the command is 
 
 ```
 cargo run -- -l ./fixtures/test_demographics1.csv -r ./fixtures/test_demographics2.csv
 ```
 
-Alternatively (recommended), you would build the optimized binary for release using
+Alternatively (recommended), you could build the optimized binary for release using
 
 ```
 cargo build --release 
