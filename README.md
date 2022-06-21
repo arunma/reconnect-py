@@ -20,7 +20,19 @@ This project has the following additives :
 ./reconnect -l ./fixtures/test_person1.csv -r ./fixtures/test_person2.csv
 ```
 
+## Build and Run
+If you would like to run it inside `cargo`, the command is 
 
+```
+cargo run -- -l ./fixtures/test_demographics1.csv -r ./fixtures/test_demographics2.csv
+```
+
+Alternatively (recommended), you would build the optimized binary for release using
+
+```
+cargo build --release 
+```
+(The binary would be inside your `target/release` folder)
 
 ## Complexity
 
