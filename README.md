@@ -20,6 +20,10 @@ This project has the following additives :
 ./reconnect -l ./fixtures/test_person1.csv -r ./fixtures/test_person2.csv
 ```
 
+## Diff output
+
+The output file would be written as `diff.csv` on the root location of your command.
+
 ## Build and Run
 If you would like to run the program inside `cargo`, the command is 
 
