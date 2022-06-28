@@ -2,7 +2,7 @@
 
 Inspired by the usage of Merkle trees by Cassandra for detecting anti-entropy, this is an attempt to use Merkle trees for performing quick and efficient comparison of two datasets.  
 
-This project has the following additives :
+This project has the following additives, from the Python version of the tool :
 
 1. Redesigned the Merkle Tree to be an array (like the heap array) instead of a first class datastucture, to optimize on locality.
 2. Enhanced the code to support CSVs. Has abstractions to extend to other formats.
